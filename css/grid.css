@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+[class*="column-"] {
+  float: left;
+  margin: 10px;
+  min-height: 7px;
+}
+
+.row::after,
+.row::before {
+  content: " ";
+  display: table;
+}
+
+.row::after {
+  clear: both;
+}
+
+.column-1 {
+  width: calc(8.333% - 20px);
+  background-color: rgb(255, 0, 0);
+}
+
+.column-2 {
+  width: calc(9.090% - 20px);
+  background-color: rgb(255, 0, 99);
+}
+
+.column-3 {
+  width: calc(10% - 20px);
+  background-color: rgb(255, 0, 207);
+}
+
+.column-4 {
+  width: calc(11.111% - 20px);
+  background-color: rgb(235, 0, 255);
+}
+
+.column-5 {
+  width: calc(12.5% - 20px);
+  background-color: rgb(173, 0, 255);
+}
+
+.column-6 {
+  width: calc(14.285% - 20px);
+  background-color: rgb(105, 0, 255);
+}
+
+.column-7 {
+  width: calc(16.666% - 20px);
+  background-color:rgb(0, 94, 255) ;
+}
+
+.column-8 {
+  width: calc(20% - 20px);
+  background-color: rgb(0, 194, 255);
+}
+
+.column-9 {
+  width: calc(25% - 20px);
+  background-color: rgb(0, 247, 255);
+}
+
+.column-10 {
+  width: calc(33.333% - 20px);
+  background-color: rgb(0, 255, 140);
+}
+
+.column-11 {
+  width: calc(50% - 20px);
+  background-color: rgb(0, 255, 3);
+}
+
+.column-12 {
+  width: calc(100% - 20px);
+  background-color: rgb(181, 255, 0);
+}
+
+.column-13 {
+  width: calc(75% - 20px);
+  background-color: rgb(255, 145, 0);
+  /* column 9 */
+}

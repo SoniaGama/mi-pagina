@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+.container {
+  max-width: 100%;
+}
+
+.row > .column-11 > .row > .icon {
+  cursor: pointer;
+  display: none;
+}
+
+.image-header {
+  background-image: url(https://dummyimage.com/1920x400.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+@media (max-width: 910px) {
+  .column-10 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .row > .column-11 > .row > .icon {
+    display: inline-block;
+  }
+  .column-9-mobile {
+    display: none;
+  }
+
+  .column-13, .column-9, .column-10 {
+    width: 100%;
+  }
+
+
+}
