@@ -2,67 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width= device-width, initial-scale= 1">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Poppins:400,700" rel="stylesheet">
     <title>Retos</title>
   </head>
   <body>
-    <section class="container">
+    <header class="row">
       <nav class="row">
-        <a href=""class="column-11">Start Bootstrap</a>
+        <span class="column-11 column-11-mobile title">The first page</span>
         <section class=column-11>
-          <section class="row">
-            <i class="fa fa-bars column-11 icon" aria-hidden="true"></i>
-            <a href="" class="column-9 column-9-mobile">Home</a>
-            <a href="" class="column-9 column-9-mobile">About</a>
-            <a href="" class="column-9 column-9-mobile">Services</a>
-            <a href="" class="column-9 column-9-mobile">Contact</a>
-          </section>
+          <a href="" class="column-11 icon column-11-mobile" id="menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+          <ul class="row menu hidden">
+            <li class="column-9 column-9-mobile menu"><a href="">Home</a></li>
+            <li class="column-9 column-9-mobile menu"><a href="">About</a></li>
+            <li class="column-9 column-9-mobile menu"><a href="">Services</a></li>
+            <li class="column-9 column-9-mobile menu"><a href="">Contact</a></li>
+          </ul>
         </section>
       </nav>
-
       <section class="row image-header">
           <h1 class="column-12">Business Name or Tagline</h1>
           <!-- <img src="https://dummyimage.com/1920x400.jpg" alt="dummyimage"> -->
       </section>
-
+    </header>
+    <section class="container">
       <section class="row">
-        <section class="column-13">
+        <section class="column-14">
           <h3>What We Do</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta dui nec urna tristique suscipit. Morbi quam odio, condimentum laoreet malesuada in, bibendum at lectus. Sed pulvinar, nibh vitae scelerisque posuere, urna diam auctor nunc, at placerat eros risus quis est.</p>
           <p>Mauris tristique lorem id ante ullamcorper interdum. Sed at condimentum sapien. Proin ultricies interdum nibh, ac interdum nisi vehicula at. Vestibulum justo nunc, fringilla volutpat lectus sit amet, suscipit vehicula est. Nunc ac auctor mauris. Nulla ultricies, lacus at efficitur suscipit.</p>
           <button type="button" name="button">Call to Action</button>
         </section>
-        <section class="column-9">
+        <section class="column-8">
           <h3>Contact Us</h3>
-          <p>Proin sit amet<br>urna tristique ultrices<br>urna a efficitur nibh.</p>
-          <p>Orci varius natoque<br>penatibus et magnis</p>
+          <p>Proin sit ametp urna tristique ultrices urna a efficitur nibh</p>
+          <p>Orci varius natoque penatibus et magnis</p>
         </section>
       </section>
 
-      <section class="row">
-        <article class="column-10">
-          <img src="https://dummyimage.com/300x200.jpg" alt="">
-          <h3>Card title</h3>
+      <section class="row cards">
+        <article class="column-10 card">
+          <img src="assets/images/1.jpg" alt="" class="img-card">
+          <h4>Card title</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta dui nec urna tristique suscipit.</p>
           <button type="button" name="button">Find Out More</button>
         </article>
-        <article class="column-10">
-          <img src="https://dummyimage.com/300x200.jpg" alt="">
-          <h3>Card title</h3>
+        <article class="column-10 card">
+          <img src="assets/images/2.jpg" alt="" class="img-card">
+          <h4>Card title</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta dui nec urna tristique suscipit.</p>
           <button type="button" name="button">Find Out More</button>
         </article>
-        <article class="column-10">
-          <img src="https://dummyimage.com/300x200.jpg" alt="">
-          <h3>Card title</h3>
+        <article class="column-10 card">
+          <img src="assets/images/3.jpg" alt="" class="img-card">
+          <h4>Card title</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta dui nec urna tristique suscipit.</p>
           <button type="button" name="button">Find Out More</button>
         </article>
       </section>
-
-      <footer class="row">
-        <p class="column-12">copy</p>
-      </footer>
     </section>
+    <footer class="row">
+      <span class="column-12">Copyright © 2018</span>
+    </footer>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

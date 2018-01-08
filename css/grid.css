@@ -70,7 +70,7 @@
 }
 
 .column-10 {
-  width: calc(33.333% - 20px);
+  width: calc(33.33% - 20px);
   background-color: rgb(0, 255, 140);
 }
 
@@ -88,4 +88,8 @@
   width: calc(75% - 20px);
   background-color: rgb(255, 145, 0);
   /* column 9 */
+}
+
+.column-14 {
+  width: calc(80% - 20px);
 }
