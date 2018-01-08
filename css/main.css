@@ -1,22 +1,23 @@
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0px auto;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
-  box-sizing: border-box;
 }
 
 nav {
   background-color: #6a4895;
-  height: 80px;
   color: #fff;
   font-size: 90%;
+  height: 75px;
+  position: fixed;
+  width: 100%;
 }
 
 a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
 }
+
 a:hover {
   color: #f285fb;
 }
@@ -31,24 +32,24 @@ li{
 }
 
 h1 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  text-align: center;
   color: #ededed;
-  text-shadow: 5px 2px 5px #212020;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 350%;
   padding-top: 110px;
+  text-align: center;
+  text-shadow: 5px 2px 5px #212020;
 }
 
 button{
-  border: none;
   background-color: #6a4895;
+  border: none;
+  border-radius: 25px;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: 75%;
-  border-radius: 25px;
+  margin-left: 5px;
   outline: none;
   padding: 10px;
-  margin-left: 5px;
 }
 
 button:hover {
@@ -61,52 +62,29 @@ button:active {
   font-weight: bold;
 }
 
-footer {
-  background-color: #6a4895;
-  margin-top: 30px;
-  font-size: 70%;
-}
-
-h3 {
+h3, h4 {
   color: #6a4895;
-  padding: 10px;
   margin: 0;
+  padding: 10px;
 }
-
 
 p {
   font-size: 90%;
-  padding: 0px 0px 10px 10px;
   margin-top: 0;
+  padding: 0px 0px 10px 10px;
 }
 
-h4 {
-  color: #6a4895;
-  padding: 10px;
-  margin: 0;
+footer {
+  background-color: #6a4895;
+  font-size: 75%;
 }
 
 [class*="column-"] {
   background-color: transparent;
 }
 
-.container {
-  padding: 10px;
-}
-
-.column-12 {
-  color: #fff;
-  text-align: center;
-  margin-top: 35px;
-  height: 50px;
-}
-
 .title {
   padding-left: 5%;
-}
-
-.menu, .icon {
-  margin-top: 0;
 }
 
 .row > .column-11 > .icon {
@@ -115,12 +93,16 @@ h4 {
   padding-left: 70%
 }
 
+.icon, .menu {
+  margin-top: 0;
+}
+
 .column-11, .column-9, .menu {
   margin-top: 0;
 }
 
 .column-11{
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .image-header {
@@ -131,6 +113,11 @@ h4 {
   background-color: #858287;
   background-blend-mode: luminosity;
   height: 400px;
+  margin-top: 75px;
+}
+
+.container {
+  padding: 10px;
 }
 
 .mail {
@@ -139,23 +126,30 @@ h4 {
 }
 
 .cards {
- margin-top: 10px;
  display: flex;
  flex-wrap: wrap;
+ margin-top: 10px;
  justify-content: center;
 }
 
 .column-10 {
-  border-radius: 10px;
   border: 1px solid #9c91a4;
-  padding-bottom: 10px;
+  border-radius: 10px;
   max-width: 302px;
+  padding-bottom: 10px;
 }
 
 .img-card {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   max-width: 100%;
+}
+
+.column-12 {
+  color: #fff;
+  margin-top: 35px;
+  height: 50px;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -175,8 +169,8 @@ h4 {
 
 @media (max-width: 768px) {
   h1 {
-    text-align: center center;
     padding-top: 20px;
+    text-align: center center;
   }
 
   p {
@@ -200,7 +194,6 @@ h4 {
   }
 
   .column-11-mobile {
-    margin-top: 30px;
-    font-size: 80%;
+    margin-top: 20px;
   }
 }
