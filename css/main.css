@@ -132,6 +132,12 @@ h4 {
   background-blend-mode: luminosity;
   height: 400px;
 }
+
+.mail {
+  color: #6a4895;
+  font-size: 80%;
+}
+
 .cards {
  margin-top: 10px;
  display: flex;
@@ -149,6 +155,16 @@ h4 {
 .img-card {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  p {
+    padding: 0px 10% 10px 10px;
+  }
+  .column-14, .column-8 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 995px) {
@@ -157,21 +173,10 @@ h4 {
   }
 }
 
-@media (max-width: 910px) {
-  h1{
-    text-align: center center;
-    padding-top: 50px;
-  }
-
-  p {
-    padding: 0px 10% 10px 10px;
-  }
-}
-
-@media (max-width: 890px) {
+@media (max-width: 768px) {
   h1 {
     text-align: center center;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   p {
@@ -186,12 +191,14 @@ h4 {
     display: none;
   }
 
-  .column-14, .column-8, .column-10{
+  .column-10{
     width: 100%;
   }
+
   .column-11-mobile, .column-11, .column-9, .menu {
     margin-top: 0;
   }
+
   .column-11-mobile {
     margin-top: 30px;
     font-size: 80%;
